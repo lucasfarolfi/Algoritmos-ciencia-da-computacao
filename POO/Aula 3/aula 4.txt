@@ -1,0 +1,38 @@
+Encapsulamento:
+
+---- Modificadores ----
+
+--> public
+    Qualquer um pode acessar
+
+--> private
+    acesso restrito para mostrar ou modificar os atributos da classe
+
+--> static
+    pode ser usado para criar métodos e chamá-los na main sem precisar de criar um objeto
+    para executá-lo
+
+---- Métodos get e set ----
+
+--> get
+    retorna o atributo quando o valor é padrão
+
+--> set
+    modifica o valor do atributo e depois retorna
+
+---- Construtor ----
+
+    O método construtor é criado com o nome da classe, e quando não é criado,
+a própria classe cria um para ele chamada default.
+
+    Este método pode ser criado sem parâmetros para executar códigos quando o objeto é criado,
+ou pode ser criado para receber parâmetros e atribuir valores aos atributos, e substituindo o
+set em alguns casos
+
+---- Função toString() ----
+    converte objetos para string, como por exemplo, a função println faz isso para exibir os objetos
+
+---- Biblioteca Math ----
+
+Math.sqrt(a,b) - raíz quadrada
+Math.random() - número aleatório
