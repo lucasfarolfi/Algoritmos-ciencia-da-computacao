@@ -1,4 +1,4 @@
-package exercicioFuncionarios;
+
 
 public class Endereco {
 	String logradouro;

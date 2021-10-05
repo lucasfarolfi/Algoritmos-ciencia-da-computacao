@@ -1,4 +1,4 @@
-package exercicioFuncionarios;
+
 
 public class Funcionario {
 	String nome;
