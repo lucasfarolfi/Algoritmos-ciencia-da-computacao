@@ -24,7 +24,7 @@ public class Funcionario {
 	public void listaDependentes() {
 		System.out.printf("Lista de dependentes:");
 		for(int i=0; i < this.dependentes.length; i++) {
-			System.out.printf("Dependente "+ i+1 + ": " + this.dependentes[i].cpfDependente);
+			System.out.printf("Dependente "+ (i+1) + ": " + this.dependentes[i].cpfDependente);
 		}
 	}
 }

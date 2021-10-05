@@ -4,7 +4,7 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		//Endereço de um usuário
+		//Endereï¿½o de um usuï¿½rio
 		Endereco e1 = new Endereco();
 		e1.logradouro = "Rua Canabarro";
 		e1.numero = 550;
@@ -17,7 +17,7 @@ public class main {
 		e2.bairro = "Flamengo";
 		e2.cep = "78952100";
 		
-		//Dependentes de um usuário
+		//Dependentes de um usuï¿½rio
 		Dependente d1 = new Dependente();
 		Dependente d2 = new Dependente();
 		Dependente d3 = new Dependente();
@@ -30,7 +30,7 @@ public class main {
 		
 		//Funcionarios
 		Funcionario f1 = new Funcionario();
-		f1.nome = "João";
+		f1.nome = "Joï¿½o";
 		f1.codMatricula = 123;
 		f1.cpf = "123.123.123-12";
 		f1.telefone = "93485-2342";
@@ -62,7 +62,9 @@ public class main {
 		setor1.listaFunc[1] = f2;
 		
 		
-		System.out.println("Total dos salários do setor:" + setor1.calcularFolha());
+		System.out.println("Total dos salï¿½rios do setor:" + setor1.calcularFolha());
+		f1.imprimirDados();
+		f1.listaDependentes();
 	}
 
 }
