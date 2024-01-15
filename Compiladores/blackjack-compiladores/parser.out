@@ -1,0 +1,173 @@
+Created by PLY version 3.8 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    DIVIDE
+    MULTIPLY
+
+Grammar
+
+Rule 0     S' -> print
+Rule 1     print -> E
+Rule 2     print -> empty
+Rule 3     E -> R EQUALS S
+Rule 4     R -> ID
+Rule 5     S -> L MINUS F
+Rule 6     F -> F PLUS L
+Rule 7     F -> L
+Rule 8     L -> INT
+Rule 9     empty -> <empty>
+
+Terminals, with rules where they appear
+
+DIVIDE               : 
+EQUALS               : 3
+ID                   : 4
+INT                  : 8
+MINUS                : 5
+MULTIPLY             : 
+PLUS                 : 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+E                    : 1
+F                    : 5 6
+L                    : 5 6 7
+R                    : 3
+S                    : 3
+empty                : 2
+print                : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . print
+    (1) print -> . E
+    (2) print -> . empty
+    (3) E -> . R EQUALS S
+    (9) empty -> .
+    (4) R -> . ID
+
+    $end            reduce using rule 9 (empty -> .)
+    ID              shift and go to state 5
+
+    print                          shift and go to state 1
+    E                              shift and go to state 2
+    empty                          shift and go to state 3
+    R                              shift and go to state 4
+
+state 1
+
+    (0) S' -> print .
+
+
+
+state 2
+
+    (1) print -> E .
+
+    $end            reduce using rule 1 (print -> E .)
+
+
+state 3
+
+    (2) print -> empty .
+
+    $end            reduce using rule 2 (print -> empty .)
+
+
+state 4
+
+    (3) E -> R . EQUALS S
+
+    EQUALS          shift and go to state 6
+
+
+state 5
+
+    (4) R -> ID .
+
+    EQUALS          reduce using rule 4 (R -> ID .)
+
+
+state 6
+
+    (3) E -> R EQUALS . S
+    (5) S -> . L MINUS F
+    (8) L -> . INT
+
+    INT             shift and go to state 9
+
+    S                              shift and go to state 7
+    L                              shift and go to state 8
+
+state 7
+
+    (3) E -> R EQUALS S .
+
+    $end            reduce using rule 3 (E -> R EQUALS S .)
+
+
+state 8
+
+    (5) S -> L . MINUS F
+
+    MINUS           shift and go to state 10
+
+
+state 9
+
+    (8) L -> INT .
+
+    MINUS           reduce using rule 8 (L -> INT .)
+    PLUS            reduce using rule 8 (L -> INT .)
+    $end            reduce using rule 8 (L -> INT .)
+
+
+state 10
+
+    (5) S -> L MINUS . F
+    (6) F -> . F PLUS L
+    (7) F -> . L
+    (8) L -> . INT
+
+    INT             shift and go to state 9
+
+    L                              shift and go to state 11
+    F                              shift and go to state 12
+
+state 11
+
+    (7) F -> L .
+
+    PLUS            reduce using rule 7 (F -> L .)
+    $end            reduce using rule 7 (F -> L .)
+
+
+state 12
+
+    (5) S -> L MINUS F .
+    (6) F -> F . PLUS L
+
+    $end            reduce using rule 5 (S -> L MINUS F .)
+    PLUS            shift and go to state 13
+
+
+state 13
+
+    (6) F -> F PLUS . L
+    (8) L -> . INT
+
+    INT             shift and go to state 9
+
+    L                              shift and go to state 14
+
+state 14
+
+    (6) F -> F PLUS L .
+
+    PLUS            reduce using rule 6 (F -> F PLUS L .)
+    $end            reduce using rule 6 (F -> F PLUS L .)
+
