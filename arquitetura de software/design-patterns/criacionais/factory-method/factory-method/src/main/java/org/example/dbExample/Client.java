@@ -1,10 +1,7 @@
-package org.example.simple;
+package org.example.dbExample;
 
-import org.example.iphoneExample.shared.IPhone;
-import org.example.simple.db.DB;
-import org.example.simple.factory.DBFactory;
-import org.example.simple.factory.OracleDBFactory;
-import org.example.simple.factory.PostgresDBFactory;
+import org.example.dbExample.db.DB;
+import org.example.dbExample.factory.PostgresDBFactory;
 
 public class Client {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.simple.db;
+package org.example.dbExample.db;
 
 public class OracleDB implements DB {
 

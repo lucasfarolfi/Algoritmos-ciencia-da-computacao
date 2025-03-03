@@ -1,7 +1,7 @@
-package org.example.simple.factory;
+package org.example.dbExample.factory;
 
-import org.example.simple.db.DB;
-import org.example.simple.db.OracleDB;
+import org.example.dbExample.db.DB;
+import org.example.dbExample.db.OracleDB;
 
 public class OracleDBFactory implements DBFactory{
     @Override
