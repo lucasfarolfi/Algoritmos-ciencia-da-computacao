@@ -1,9 +1,9 @@
-package org.example.after;
+package org.example.iphoneExample.after;
 
-import org.example.after.factory.IPhone11ProFactory;
-import org.example.after.factory.IPhoneXFactory;
-import org.example.after.factory.IphoneFactory;
-import org.example.shared.*;
+import org.example.iphoneExample.after.factory.IPhone11ProFactory;
+import org.example.iphoneExample.after.factory.IPhoneXFactory;
+import org.example.iphoneExample.after.factory.IphoneFactory;
+import org.example.iphoneExample.shared.IPhone;
 
 public class Client {
     public static void main(String[] args) {

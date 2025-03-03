@@ -1,4 +1,4 @@
-package org.example.shared;
+package org.example.iphoneExample.shared;
 
 public class IPhoneXSMax extends IPhone {
 

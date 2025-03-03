@@ -1,6 +1,6 @@
-package org.example.halfSimple.factory;
+package org.example.iphoneExample.halfSimple.factory;
 
-import org.example.shared.IPhone;
+import org.example.iphoneExample.shared.IPhone;
 
 public abstract class IphoneFactory {
     public IPhone orderIphone(String level) {

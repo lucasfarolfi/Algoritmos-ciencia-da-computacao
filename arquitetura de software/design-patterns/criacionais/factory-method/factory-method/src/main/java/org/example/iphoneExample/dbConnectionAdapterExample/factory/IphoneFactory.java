@@ -1,11 +1,20 @@
-package org.example.before;
+package org.example.iphoneExample.dbConnectionAdapterExample.factory;
 
-import org.example.shared.*;
+import org.example.iphoneExample.shared.*;
 
-public class Client {
-    public IPhone orderIphone(String generation, String level) {
+public class IphoneFactory {
+    public static IPhone orderIphone(String generation, String level) {
+        IPhone device = createIPhone(generation, level);
+        device.getHardware();
+        device.assemble();
+        device.certificates();
+        device.pack();
+        return device;
+    }
+
+    // This is the Factory Method
+    public static IPhone createIPhone(String generation, String level){
         IPhone device = null;
-
         if(generation.equals("X")){
             if(level.equals("standard")){
                 device = new IPhoneX();
@@ -23,22 +32,6 @@ public class Client {
                 throw new RuntimeException("This generation and/or level doesn't exists");
             }
         }
-        device.getHardware();
-        device.assemble();
-        device.certificates();
-        device.pack();
         return device;
-    }
-
-    public static void main(String[] args) {
-        Client client = new Client();
-
-        System.out.println("### Ordering an iPhone X");
-        IPhone iphone = client.orderIphone("X", "standard");
-        System.out.println(iphone);
-
-        System.out.println("\n\n### Ordering an iPhone 11 HighEnd");
-        IPhone iphone2 = client.orderIphone("11", "highEnd");
-        System.out.println(iphone2);
     }
 }

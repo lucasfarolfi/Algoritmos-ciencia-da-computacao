@@ -1,9 +1,9 @@
-package org.example.halfSimple;
+package org.example.iphoneExample.halfSimple;
 
-import org.example.halfSimple.factory.IPhone11Factory;
-import org.example.halfSimple.factory.IPhoneXFactory;
-import org.example.halfSimple.factory.IphoneFactory;
-import org.example.shared.IPhone;
+import org.example.iphoneExample.halfSimple.factory.IPhone11Factory;
+import org.example.iphoneExample.halfSimple.factory.IPhoneXFactory;
+import org.example.iphoneExample.halfSimple.factory.IphoneFactory;
+import org.example.iphoneExample.shared.IPhone;
 
 public class Client {
     public static void main(String[] args) {

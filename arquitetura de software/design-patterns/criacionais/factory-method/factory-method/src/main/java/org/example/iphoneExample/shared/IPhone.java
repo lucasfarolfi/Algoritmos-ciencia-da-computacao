@@ -1,4 +1,4 @@
-package org.example.shared;
+package org.example.iphoneExample.shared;
 
 public abstract class IPhone {
 	

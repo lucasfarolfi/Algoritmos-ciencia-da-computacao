@@ -1,8 +1,8 @@
-package org.example.halfSimple.factory;
+package org.example.iphoneExample.halfSimple.factory;
 
-import org.example.shared.IPhone;
-import org.example.shared.IPhone11;
-import org.example.shared.IPhone11Pro;
+import org.example.iphoneExample.shared.IPhone;
+import org.example.iphoneExample.shared.IPhone11;
+import org.example.iphoneExample.shared.IPhone11Pro;
 
 public class IPhone11Factory extends IphoneFactory {
     @Override

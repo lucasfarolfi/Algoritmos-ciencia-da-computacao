@@ -1,16 +1,17 @@
 package org.example.simple;
 
-import org.example.shared.IPhone;
-import org.example.simple.factory.IphoneFactory;
+import org.example.iphoneExample.shared.IPhone;
+import org.example.simple.db.DB;
+import org.example.simple.factory.DBFactory;
+import org.example.simple.factory.OracleDBFactory;
+import org.example.simple.factory.PostgresDBFactory;
 
 public class Client {
     public static void main(String[] args) {
-        System.out.println("### Ordering an iPhone X");
-        IPhone iPhone = IphoneFactory.orderIphone("X", "standard");
-        System.out.println(iPhone);
+        DB db = new PostgresDBFactory().getDatabase();
+        //DB db = new OracleDBFactory().getDatabase();
 
-        System.out.println("\n\n### Ordering an iPhone 11 HighEnd");
-        IPhone iPhone2 = IphoneFactory.orderIphone("11", "highEnd");
-        System.out.println(iPhone2);
+        db.query("SELECT * FROM users");
+        db.query("INSERT INTO users VALUES ('User', 25)");
     }
 }

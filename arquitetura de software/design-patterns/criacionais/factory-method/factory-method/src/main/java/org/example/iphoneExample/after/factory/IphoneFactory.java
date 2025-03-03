@@ -1,6 +1,6 @@
-package org.example.after.factory;
+package org.example.iphoneExample.after.factory;
 
-import org.example.shared.IPhone;
+import org.example.iphoneExample.shared.IPhone;
 
 public abstract class IphoneFactory {
     public IPhone orderIphone() {
