@@ -12,6 +12,9 @@ public class Client {
 		meal.setSide("left");
 		meal.setToy("Relampago marquinhos");
 
+		System.out.println(new FastFoodMeal("X-Tudo", "Pepsi"));
+		System.out.println(new FastFoodMeal("Dogao", "suco de laranja", "pudim", "right"));
+
 		System.out.println(meal);
 	}
 }
