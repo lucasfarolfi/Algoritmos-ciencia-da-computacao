@@ -1,4 +1,4 @@
-package org.example.example;
+package org.example.gof;
 
 public class Person implements Cloneable {
 	String line1;

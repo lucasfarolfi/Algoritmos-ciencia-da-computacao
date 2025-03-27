@@ -1,7 +1,4 @@
-package org.example;
-
-import org.example.example.Person;
-import org.example.example.PersonSamples;
+package org.example.gof;
 
 import java.util.ArrayList;
 import java.util.List;

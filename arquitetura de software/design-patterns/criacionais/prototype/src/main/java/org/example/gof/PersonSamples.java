@@ -1,4 +1,4 @@
-package org.example.example;
+package org.example.gof;
 
 import java.util.HashMap;
 import java.util.Map;
